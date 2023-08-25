@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLORSENSE</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="title">colorsense</h2>
+                <ul>
+                  <li class="home1">HOME</li>
+                  <li class="about1">ABOUT</li>
+                  <li class="account1">ACCOUNT</li>
+                  <li class="contact1">CONTACT</li>
+                </ul>
+                <div id="menuButton" onclick="menuLateral()">&#9776;</div>
+                <section class="menu-lateral">
+                  <p class="home">HOME</p>
+                  <p class="about">ABOUT</p>
+                  <p class="account">ACCOUNT</p>
+                  <p class="contact">CONTACT</p>
+                </section>
+        </nav>
+      </header>
+    
+    <main>
+        <section class="area-login">         <!--    <----  <----  ADICIONADO-->
+            <h1 class="login">Login</h1>
+            <input type="text" placeholder="Username" class="username"><br> <!--    <----  <----  MODIFICADO-->
+            <input type="password" placeholder="Password" class="pass"><br> <!--    <----  <----  MODIFICADO-->
+            <button>login</button><br>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">© colorsense.com 2023. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function menuLateral() {
+            const menu = document.querySelector('section.menu-lateral')
+            const buttonMenu = document.querySelector('div#menuButton')
+            buttonMenu.classList.toggle('open')
+            menu.classList.toggle("opened")
+        }
+        </script>
+</body>
+</html>

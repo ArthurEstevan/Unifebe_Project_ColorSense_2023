@@ -1,0 +1,179 @@
+body {
+    background-color: #f5f4ea;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*{
+  transition: 300ms;
+}
+header {
+    margin: 0;
+    padding: 2%;
+}
+nav {
+    display: flex;
+}
+ul {
+    display: flex;
+    width: 43%;
+    justify-content: center;
+    margin-top: 7px;
+    margin-left: 20%;
+    padding: 0;
+}
+li {
+    margin-left: 50px;
+    list-style: none;
+    padding: 0;
+}
+.title {
+    padding: 0;
+    margin: 0;
+}
+.contact, .about, .account, .home {
+    margin: 5px;
+    width: 90%;
+    background-color: #00000062;
+    text-align: center  ;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    }
+
+#menuButton {
+        display: none;
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+        color: #000000;
+        transition: right 0.3s ease-in-out;
+    }
+#menuButton.open {
+        top: 10px;
+        right: 150px;
+    }
+.menu-lateral {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background-color: rgba(0, 0, 0, 0.671);
+        height: 100%;
+        padding: 20px;
+        transition: right 0.2s ease-in-out;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.781);
+    }
+.menu-lateral.opened {
+        right: 0;
+        transition: right 0.2s ease-in-out;
+    }
+
+    @media only screen and (max-width: 800px) {
+        ul {
+            display: none;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10%;
+        }
+        #menuButton{
+            display: flex;
+        }
+    }
+
+
+
+
+    .area-login{
+        width: 80%;
+        display: block;
+        text-align: center;         /*ADICIONADO*/ 
+        margin-left: 10%;
+    }   
+
+    .login {
+        font-size: 50px;
+        text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.842);
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .username{
+        color: rgba(128, 128, 128, 0.842);
+        width: 50%;
+        padding: 10px 0px 15px  0px;
+        border: none;
+        font-size: larger;                                              /*MODIFICADO*/
+        border-bottom: 2px solid rgba(0, 0, 0, 0.616);
+        text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.603);
+        background-color: #f5f4ea;
+        outline: none;
+    }
+    .username:focus{
+        border-bottom: 2px solid  #F3C53C;
+        border-top: none;                       /*ADICIONADO*/
+        border-left: none;      
+        border-right: none;
+    }
+
+    .pass{
+        color: rgba(128, 128, 128, 0.842);
+        width: 50%;
+        padding: 40px 0px 15px  0px;
+        border: none;
+        font-size: larger;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.616);          /*MODIFICADO*/
+        text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.603);
+        background-color: #f5f4ea;
+        outline: none;
+    }
+    .pass:focus{
+        border-bottom: 2px solid  #F3C53C;
+        border-top: none;
+        border-left: none;                          /*ADICIONADO*/
+        border-right: none;
+    }
+    ::placeholder{
+        color: #00000075;
+        text-shadow: none;          /*ADICIONADO*/
+        font-weight: 100;  
+        font-size: 18px;
+
+    }
+      
+
+
+    button {
+        background-color: #F3C53C;
+        padding: 10px;
+        margin-top: 40px;
+        width: 30%;
+        border: none;
+        text-align: center;
+        font-size: 150%;
+        box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.842);
+    }
+
+    @media only screen and (max-width: 400px) {
+        .username, .pass, button {
+            width: 90%;                             /*ADICIONADO*/
+        }
+        .login{
+            margin-left: 5%;
+        }
+    }    
+
+
+
+    footer {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        border-top: 2px solid rgba(0, 0, 0, 0.397);
+        width: 96%;
+        margin-left: 2%;
+      }

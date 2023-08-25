@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f5f4ea;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        header {
+            margin: 0;
+            padding: 2%;
+        }
+        nav {
+            display: flex;
+        }
+        ul {
+            display: flex;
+            margin-top: 7px;
+            margin-left: 25%;
+            padding: 0;
+        }
+        li {
+            margin-left: 10%;
+            list-style: none;
+            padding: 0;
+        }
+        .title {
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+
+        p {
+                margin: 5px;
+                width: 90%;
+                background-color: #00000083;
+                text-align: center  ;
+                padding: 10px;
+                border-radius: 10px;
+                padding: 10px;
+                color: white;
+            }
+
+        
+        #menuButton {
+            display: none;
+            position: fixed;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            color: #000000;
+            transition: right 0.3s ease-in-out;
+        }
+        #menuButton.open {
+            top: 10px;
+            right: 150px;
+        }
+        .menu-lateral {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            background-color: rgba(0, 0, 0, 0.671);
+            height: 100%;
+            padding: 20px;
+            transition: right 0.2s ease-in-out;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.781);
+        }
+        .menu-lateral.opened {
+            right: 0;
+            transition: right 0.2s ease-in-out;
+        }
+
+
+
+        @media only screen and (max-width: 700px) {
+            ul {
+                display: none;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+            }
+            #menuButton{
+                display: flex;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="title">colorsense</h2>
+            <ul>
+                <li class="home">HOME</li>
+                <li class="about">ABOUT</li>
+                <li class="account">ACCOUNT</li>
+                <li class="contact">CONTACT</li>
+            </ul>
+            
+            <div id="menuButton" onclick="menuLateral()">&#9776;</div>
+                <section class="menu-lateral">
+                    
+                        <p class="home">HOME</p>
+                        <p class="about">ABOUT</p>
+                        <p class="account">ACCOUNT</p>
+                        <p class="contact">CONTACT</p>
+                    
+                </section>
+        </nav>
+    </header>
+    <script>
+        function menuLateral() {
+            const menu = document.querySelector('section.menu-lateral')
+            const buttonMenu = document.querySelector('div#menuButton')
+            buttonMenu.classList.toggle('open')
+            menu.classList.toggle("opened")
+        }
+    </script>
+    
+</body>
+</html>

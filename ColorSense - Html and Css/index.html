@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COLORSENSE</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+        <h2 class="title">colorsense</h2>
+            <ul>
+              <li class="home1">HOME</li>
+              <li class="about1">ABOUT</li>
+              <li class="account1">ACCOUNT</li>
+              <li class="contact1">CONTACT</li>
+            </ul>
+            <div id="menuButton" onclick="menuLateral()">&#9776;</div>
+            <section class="menu-lateral">
+              <p class="home">HOME</p>
+              <p class="about">ABOUT</p>
+              <p class="account">ACCOUNT</p>
+              <p class="contact">CONTACT</p>
+            </section>
+    </nav>
+  </header>
+
+  <div class="area-circle">
+    <section class="circle">  </section>
+  </div>
+
+  <div class="texts">
+  <p class="text-1">Lorem ipsum dolor sit amet consectetur. 
+    Gravida at ac hac. Quisque in risus 
+    ornare porttitor. At venenatis</p>
+    <p class="text-3"><span class="strong" style="font-weight: 900;">how use colorsense?</span> <br>
+      select your image above 
+      or point your camera</p>
+  <p class="text-2">Lorem ipsum dolor sit amet consectetur. 
+    Gravida at ac hac. Quisque in risus 
+    ornare porttitor. At venenatis</p>
+  </div>
+
+  <h1 class="changes">Changes in lives</h1>
+
+  <footer>
+    <p class="footer-text">© colorsense.com 2023. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    function menuLateral() {
+        const menu = document.querySelector('section.menu-lateral')
+        const buttonMenu = document.querySelector('div#menuButton')
+        buttonMenu.classList.toggle('open')
+        menu.classList.toggle("opened")
+    }
+    </script>
+
+</body>
+</html>
