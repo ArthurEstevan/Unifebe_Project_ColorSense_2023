@@ -11,8 +11,20 @@
 
 <p align="center"> 
 → <a href="https://www.figma.com/file/JlTol6lbIt1brUM6MFGJ6U/ColorSense.com?type=design&node-id=0-1&mode=design&t=CN63vH5mxqP6cSHL-0">Meet my project at Figma to understand the ideia</a>   ←
-    
 </p>
+
+<br>
+
+<div align="center"> 
+<h3>Developers Responsible for the Project ColorSense</h3>
+
+<br>
+    
+ <img src="icons/Cassio.jpg">
+ <img src="icons/arthur.jpg">
+ <img src="icons/Cassio.jpg">
+ <img src="icons/Cassio.jpg">
+</div>
 
 <br>
 
