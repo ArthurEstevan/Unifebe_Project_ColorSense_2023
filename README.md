@@ -59,4 +59,12 @@ Junte-se a nós nessa jornada para transformar a forma como o conteúdo visual �
 
 <br>
 
-![Home](/icons/ColorSense.com.pdf)
+![Colorsense Home](https://github.com/ArthurEstevan/Unifebe_Project_ColorSense_2023/blob/2917b8211162b54b02af1bb8252345a0f2245393/icons/ColorSense%203_page-0001.jpg)
+
+<br>
+
+![Colorsense Register](https://github.com/ArthurEstevan/Unifebe_Project_ColorSense_2023/blob/2917b8211162b54b02af1bb8252345a0f2245393/icons/ColorSense%201_page-0001.jpg)
+
+<br>
+
+![Colorsense Login](https://github.com/ArthurEstevan/Unifebe_Project_ColorSense_2023/blob/2917b8211162b54b02af1bb8252345a0f2245393/icons/ColorSense%202_page-0001.jpg)
