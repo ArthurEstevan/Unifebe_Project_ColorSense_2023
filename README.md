@@ -22,7 +22,7 @@
     
  <img src="icons/Cassio.jpg">
  <img src="icons/arthur.jpg">
- <img src="icons/Cassio.jpg">
+ <img src="icons/Tobias.jpg">
  <img src="icons/Cassio.jpg">
 </div>
 
